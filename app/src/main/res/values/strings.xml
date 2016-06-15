@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">sliderfragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_info">Info</string>
+    <string name="title_activity_user">User</string>
+    <string-array name="spinner_array">
+        <item>Select a category</item>
+        <item>Medical</item>
+        <item>Btech</item>
+        <item>MBA</item>
+    </string-array>
+    <string name="title_activity_btech_list">Btech_list</string>
+</resources>
