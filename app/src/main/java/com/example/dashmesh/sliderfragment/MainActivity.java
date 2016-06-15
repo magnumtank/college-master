@@ -181,9 +181,9 @@ public class MainActivity extends AppCompatActivity {
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                       // Intent intent = new Intent(getActivity(), Info.class);
-                       // intent.putExtra(Info.TAB_INDEX_KEY, 3);
-                       // startActivity(intent);
+                        Intent intent = new Intent(getActivity(), Info.class);
+                        intent.putExtra(Info.TAB_INDEX_KEY, 3);
+                        startActivity(intent);
 
                     }
                 });

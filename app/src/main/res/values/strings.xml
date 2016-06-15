@@ -11,4 +11,5 @@
         <item>MBA</item>
     </string-array>
     <string name="title_activity_btech_list">Btech_list</string>
+    <string name="title_activity_college1">college1</string>
 </resources>

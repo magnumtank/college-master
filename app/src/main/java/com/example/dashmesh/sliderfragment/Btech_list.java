@@ -49,7 +49,7 @@ public class Btech_list extends AppCompatActivity {
                 // }
                 if (groupPosition==0){
 
-                    Intent i = new Intent(Btech_list.this, User.class);
+                    Intent i = new Intent(Btech_list.this, college1.class);
                     startActivity(i);
                 }
                 return true;
