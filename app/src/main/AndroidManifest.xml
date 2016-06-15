@@ -23,10 +23,6 @@
             android:label="Main Page"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Info"
-            android:label="@string/title_activity_info"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".User"
             android:label="@string/title_activity_user"
             android:theme="@style/AppTheme.NoActionBar" />

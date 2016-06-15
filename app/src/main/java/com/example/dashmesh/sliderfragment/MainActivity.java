@@ -177,18 +177,9 @@ public class MainActivity extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) {
                 View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-                Button button = (Button) rootView.findViewById(R.id.button1);
-                button.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(getActivity(), Info.class);
-                        intent.putExtra(Info.TAB_INDEX_KEY, 3);
-                        startActivity(intent);
 
-                    }
-                });
-                TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-                textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+                //TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+                //textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
 
                 final Spinner spinner = (Spinner) rootView.findViewById(R.id.spinner);
 // Create an ArrayAdapter using the string array and a default spinner layout
@@ -227,13 +218,12 @@ public class MainActivity extends AppCompatActivity {
             if (getArguments().getInt(ARG_SECTION_NUMBER) == 2) {
                 View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
 
-                return rootView;
-            }
-            if (getArguments().getInt(ARG_SECTION_NUMBER) == 3) {
-                View rootView = inflater.inflate(R.layout.fragment_main3, container, false);
+                TextView textView = (TextView) rootView.findViewById(R.id.textview);
+
 
                 return rootView;
             }
+
             return null;
         }
     }
@@ -258,7 +248,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 2;
         }
 
         @Override
@@ -268,8 +258,6 @@ public class MainActivity extends AppCompatActivity {
                     return "SECTION 1";
                 case 1:
                     return "SECTION 2";
-                case 2:
-                    return "SECTION 3";
             }
             return null;
         }
